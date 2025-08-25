@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>বাংলাদেশ ইমারজেন্সি হেল্প সেন্টার (BEHC)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans Bengali', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+    }
+
+    header {
+      background-color: #047857;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .icon {
+      font-size: 2.2rem;
+      color: #047857;
+      margin-bottom: 0.6rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.6rem;
+      color: #111827;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.45rem 1rem;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+      transition: background 0.2s ease;
+    }
+
+    .btn-call {
+      background-color: #dc2626;
+    }
+
+    .btn-call:hover {
+      background-color: #b91c1c;
+    }
+
+    .btn-map {
+      background-color: #10b981;
+    }
+
+    .btn-map:hover {
+      background-color: #059669;
+    }
+
+    .btn-message {
+      background-color: #3b82f6;
+    }
+
+    .btn-message:hover {
+      background-color: #2563eb;
+    }
+
+    #contact {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    #contact h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #111827;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #contact input, #contact textarea {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    #contact button {
+      background-color: #047857;
+      color: white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #03634a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>বাংলাদেশ ইমারজেন্সি হেল্প সেন্টার (BEHC)</h1>
+    <div>সরাসরি কল / লোকেশন / বার্তা</div>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <div class="icon"><i class="bi bi-fire"></i></div>
+      <h3>ফায়ার সার্ভিস</h3>
+      <a href="tel:199" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+Fire+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="ফায়ার সার্ভিস" data-email="fairservice190@gmail.com">মেসেজ</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="bi bi-shield-shaded"></i></div>
+      <h3>পুলিশ বিভাগ</h3>
+      <a href="tel:999" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+Police" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="পুলিশ বিভাগ" data-email="police@behc.gov.bd">মেসেজ</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="bi bi-tree-fill"></i></div>
+      <h3>বন বিভাগ</h3>
+      <a href="tel:+88029551119" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=forest+Department" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="বন বিভাগ" data-email="forest@behc.gov.bd">মেসেজ</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="bi bi-hospital-fill"></i></div>
+      <h3>হাসপাতাল</h3>
+      <a href="tel:16263" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Health+Services,+Mohakhali" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="হাসপাতাল" data-email="hospital@behc.gov.bd">মেসেজ</a>
+    </div>
+
+</div><div class="card">
+      <i class="bi bi-bluesky"></i>
+      <h3>নারী ও শিশু বিভাগ</h3>  
+      <a href="tel:109" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Ministry+of+Women+and+Children+Affairs" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="নারী ও শিশু বিভাগ" data-email="women@behc.gov.bd">মেসেজ</a>
+    </div>
+
+ <div class="card">
+      <i class="icon bi bi-cash-coin"></i>
+      <h3>দুদক বিভাগ</h3>
+      <a href="tel:106" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+acc+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="দুদক" data-email="Acc@behc.gov.bd">মেসেজ</a>
+    </div><div class="card">
+     <i class="icon bi bi-person-rolodex"></i>
+      <h3>ভোক্তা আধিকার</h3>
+      <a href="tel:16121" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+consumerrights+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="ভোক্তা আধিকার" data-email="consumerrights@behc.gov.bd">মেসেজ</a>
+    </div><div class="card">
+     <i class="icon bi bi-airplane-engines-fill"></i>
+      <h3>এয়ারলাইন্স</h3>
+      <a href="tel:13636" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+Airlines+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="এয়ারলাইন্স" data-email="Airlines@behc.gov.bd">মেসেজ</a>
+    </div><div class="card">
+      <i class="icon bi bi-snow2"></i>
+      <h3>নাবিক বিভাগ</h3>
+      <a href="tel:+880241046701" class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+marin+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="নাবিক বিভাগ" data-email="Marin@behc.gov.bd">মেসেজ</a>
+    </div><div class="card">
+      <i class="bi bi-bookmark-star-fill"></i>
+      <h3>সেনাবাহিনী</h3>
+      <a href="tel:+8801769013630 " class="btn-outline btn-call">কল করুন</a>
+      <a href="https://www.google.com/maps?q=Bangladesh+army+Service" target="_blank" class="btn-outline btn-map">লোকেশন</a>
+      <a href="#contact" class="btn-outline btn-message message-btn" data-name="সেনাবাহিনী" data-email="army@behc.gov.bd">মেসেজ</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>বার্তা পাঠান</h2>
+     <form id="messageForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- ✅ Your Web3Forms access key -->
+    <input type="hidden" name="access_key" value="8bfd573f-036e-486a-beba-e1205fd1fab0">
+     <input type="text" id="name" name="name" placeholder="নাম" />
+      <input type="text" id="dept" name="dept" placeholder="বিভাগ" readonly />
+      <input type="email" id="email" name="email" placeholder="ইমেইল " readonly />
+      <textarea id="message" name="message" placeholder="আপনার বার্তা লিখুন..." rows="5" required></textarea>
+      <button type="submit">বার্তা পাঠান</button>
+    </form>
+  </section>
+
+  <script>
+    document.querySelectorAll(".message-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const name = button.dataset.name;
+        const email = button.dataset.email;
+        document.getElementById("dept").value = name || "";
+        document.getElementById("email").value = email || "";
+      });
+    });
+
+     // Show success or error without redirect
+    document.getElementById("messageForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const form = e.target;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          alert("✅ আপনার বার্তা সফলভাবে পাঠানো হয়েছে!");
+          form.reset();
+        } else {
+          alert("❌ বার্তা পাঠাতে সমস্যা হয়েছে। আবার চেষ্টা করুন।");
+        }
+      } catch (error) {
+        console.error("Web3Forms Error:", error);
+        alert("❌ বার্তা পাঠাতে সমস্যা হয়েছে।");
+      }
+    });
+  </script>
+
+</body>
+</html>
